@@ -1,0 +1,323 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ProStart3.Model</name>
+    </assembly>
+    <members>
+        <member name="T:ProStart3.Model.Models.tb_collect">
+            <summary>
+            收藏表实体类
+            </summary>
+        </member>
+        <member name="P:ProStart3.Model.Models.tb_collect.Collect_id">
+            <summary>
+            收藏表的主键
+            </summary>
+        </member>
+        <member name="P:ProStart3.Model.Models.tb_collect.User_id">
+            <summary>
+            收藏动作的发起者
+            </summary>
+        </member>
+        <member name="P:ProStart3.Model.Models.tb_collect.Writing_id">
+            <summary>
+            被收藏文章的主键
+            </summary>
+        </member>
+        <member name="P:ProStart3.Model.Models.tb_collect.CollectFolder_id">
+            <summary>
+            收藏夹的主键id
+            </summary>
+        </member>
+        <member name="P:ProStart3.Model.Models.tb_collect.Collect_time">
+            <summary>
+            动作的发生时间
+            </summary>
+        </member>
+        <member name="T:ProStart3.Model.Models.tb_collectFolder">
+            <summary>
+            收藏文件夹实体类
+            </summary>
+        </member>
+        <member name="P:ProStart3.Model.Models.tb_collectFolder.CollectFolder_id">
+            <summary>
+            文件夹id
+            </summary>
+        </member>
+        <member name="P:ProStart3.Model.Models.tb_collectFolder.CollectFolder_name">
+            <summary>
+            文件夹名
+            </summary>
+        </member>
+        <member name="P:ProStart3.Model.Models.tb_collectFolder.User_id">
+            <summary>
+            用户id
+            </summary>
+        </member>
+        <member name="P:ProStart3.Model.Models.tb_collectFolder.Create_time">
+            <summary>
+            文件夹建立时间
+            </summary>
+        </member>
+        <member name="T:ProStart3.Model.Models.tb_comment">
+            <summary>
+            评论表实体类
+            </summary>
+        </member>
+        <member name="P:ProStart3.Model.Models.tb_comment.Comment_id">
+            <summary>
+            评论id
+            </summary>
+        </member>
+        <member name="P:ProStart3.Model.Models.tb_comment.User_id">
+            <summary>
+            评论人的id
+            </summary>
+        </member>
+        <member name="P:ProStart3.Model.Models.tb_comment.Comment_content">
+            <summary>
+            评论人的url
+            </summary>
+        </member>
+        <member name="P:ProStart3.Model.Models.tb_comment.Writing_id">
+            <summary>
+            文章的writingid
+            </summary>
+        </member>
+        <member name="P:ProStart3.Model.Models.tb_comment.Comment_createtime">
+            <summary>
+            评论时间
+            </summary>
+        </member>
+        <member name="T:ProStart3.Model.Models.tb_like">
+            <summary>
+            点赞实体类
+            </summary>
+        </member>
+        <member name="P:ProStart3.Model.Models.tb_like.Like_id">
+            <summary>
+            点赞id
+            </summary>
+        </member>
+        <member name="P:ProStart3.Model.Models.tb_like.User_id">
+            <summary>
+            用户id
+            </summary>
+        </member>
+        <member name="P:ProStart3.Model.Models.tb_like.Writing_id">
+            <summary>
+            文章id
+            </summary>
+        </member>
+        <member name="P:ProStart3.Model.Models.tb_like.Like_time">
+            <summary>
+            点赞时间
+            </summary>
+        </member>
+        <member name="T:ProStart3.Model.Models.tb_material">
+            <summary>
+            资料实体类
+            </summary>
+        </member>
+        <member name="P:ProStart3.Model.Models.tb_material.Material_id">
+            <summary>
+            资料id
+            </summary>
+        </member>
+        <member name="P:ProStart3.Model.Models.tb_material.User_id">
+            <summary>
+            用户id
+            </summary>
+        </member>
+        <member name="P:ProStart3.Model.Models.tb_material.Material_title">
+            <summary>
+            资料标题
+            </summary>
+        </member>
+        <member name="P:ProStart3.Model.Models.tb_material.Material_content">
+            <summary>
+            资料内容
+            </summary>
+        </member>
+        <member name="P:ProStart3.Model.Models.tb_material.MaterialCreate_time">
+            <summary>
+            资料创建时间
+            </summary>
+        </member>
+        <member name="P:ProStart3.Model.Models.tb_material.MaterialClass_id">
+            <summary>
+            资料类型id
+            </summary>
+        </member>
+        <member name="T:ProStart3.Model.Models.tb_materialclass">
+            <summary>
+            资料类型实体类
+            </summary>
+        </member>
+        <member name="P:ProStart3.Model.Models.tb_materialclass.MaterialClass_id">
+            <summary>
+            资料类型id
+            </summary>
+        </member>
+        <member name="P:ProStart3.Model.Models.tb_materialclass.MaterialClass_name">
+            <summary>
+            资料类型名
+            </summary>
+        </member>
+        <member name="P:ProStart3.Model.Models.tb_materialclass.MaterialClass_createTime">
+            <summary>
+            资料类型创建时间
+            </summary>
+        </member>
+        <member name="T:ProStart3.Model.Models.tb_user">
+            <summary>
+            用户实体类
+            </summary>
+        </member>
+        <member name="P:ProStart3.Model.Models.tb_user.User_id">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:ProStart3.Model.Models.tb_user.User_userName">
+            <summary>
+            用户名/账号
+            </summary>
+        </member>
+        <member name="P:ProStart3.Model.Models.tb_user.User_email">
+            <summary>
+            用户邮箱
+            </summary>
+        </member>
+        <member name="P:ProStart3.Model.Models.tb_user.Password">
+            <summary>
+            用户密码
+            </summary>
+        </member>
+        <member name="P:ProStart3.Model.Models.tb_user.User_nickname">
+            <summary>
+            用户昵称
+            </summary>
+        </member>
+        <member name="P:ProStart3.Model.Models.tb_user.User_profilePicture">
+            <summary>
+            用户头像路径
+            </summary>
+        </member>
+        <member name="P:ProStart3.Model.Models.tb_user.User_sex">
+            <summary>
+            用户性别
+            </summary>
+        </member>
+        <member name="P:ProStart3.Model.Models.tb_user.User_classId">
+            <summary>
+            用户等级
+            </summary>
+        </member>
+        <member name="T:ProStart3.Model.Models.tb_visit">
+            <summary>
+            访问实体类
+            </summary>
+        </member>
+        <member name="P:ProStart3.Model.Models.tb_visit.Visit_id">
+            <summary>
+            访问id
+            </summary>
+        </member>
+        <member name="P:ProStart3.Model.Models.tb_visit.User_id">
+            <summary>
+            用户id
+            </summary>
+        </member>
+        <member name="P:ProStart3.Model.Models.tb_visit.Writing_id">
+            <summary>
+            文章id
+            </summary>
+        </member>
+        <member name="P:ProStart3.Model.Models.tb_visit.Visit_time">
+            <summary>
+            访问时间
+            </summary>
+        </member>
+        <member name="T:ProStart3.Model.Models.tb_writing">
+            <summary>
+            文章实体类
+            </summary>
+        </member>
+        <member name="P:ProStart3.Model.Models.tb_writing.Writing_id">
+            <summary>
+            文章id
+            </summary>
+        </member>
+        <member name="P:ProStart3.Model.Models.tb_writing.User_id">
+            <summary>
+            用户id
+            </summary>
+        </member>
+        <member name="P:ProStart3.Model.Models.tb_writing.Status">
+            <summary>
+            文章状态
+            </summary>
+        </member>
+        <member name="P:ProStart3.Model.Models.tb_writing.WritingClass_id">
+            <summary>
+            文章类型id
+            </summary>
+        </member>
+        <member name="P:ProStart3.Model.Models.tb_writing.Writing_title">
+            <summary>
+            文章标题
+            </summary>
+        </member>
+        <member name="P:ProStart3.Model.Models.tb_writing.Writing_content">
+            <summary>
+            文章内容
+            </summary>
+        </member>
+        <member name="P:ProStart3.Model.Models.tb_writing.Writing_createTime">
+            <summary>
+            文章创建时间
+            </summary>
+        </member>
+        <member name="P:ProStart3.Model.Models.tb_writing.Writing_image">
+            <summary>
+            文章图片路径
+            </summary>
+        </member>
+        <member name="P:ProStart3.Model.Models.tb_writing.writingVisit_likeAmount">
+            <summary>
+            文章点赞量
+            </summary>
+        </member>
+        <member name="P:ProStart3.Model.Models.tb_writing.writingVisit_collectAmount">
+            <summary>
+            文章收藏量
+            </summary>
+        </member>
+        <member name="P:ProStart3.Model.Models.tb_writing.writingVisit_readAmount">
+            <summary>
+            文章访问量
+            </summary>
+        </member>
+        <member name="T:ProStart3.Model.Models.tb_writingsclass">
+            <summary>
+            文章类型实体类
+            </summary>
+        </member>
+        <member name="P:ProStart3.Model.Models.tb_writingsclass.WritingClass_id">
+            <summary>
+            文章类型id
+            </summary>
+        </member>
+        <member name="P:ProStart3.Model.Models.tb_writingsclass.WritingClass_name">
+            <summary>
+            文章类型名
+            </summary>
+        </member>
+        <member name="P:ProStart3.Model.Models.tb_writingsclass.WritingClass_createTime">
+            <summary>
+            文章类型名创建时间
+            </summary>
+        </member>
+    </members>
+</doc>

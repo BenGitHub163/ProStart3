@@ -4,10 +4,16 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>D:\代码\text\后端代码(2)\后端代码\ProStart3.Model.xml</DocumentationFile>
+  </PropertyGroup>
+
   <ItemGroup>
-    <PackageReference Include="SqlSugar" Version="5.0.4.6" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="7.2.0" />
+    <PackageReference Include="Autofac.Extras.DynamicProxy" Version="6.0.0" />
+    <PackageReference Include="SqlSugar" Version="5.0.5.4" />
     <PackageReference Include="SqlSugar.IOC" Version="1.7.0" />
-    <PackageReference Include="SqlSugarCore" Version="5.0.4.7" />
+    <PackageReference Include="SqlSugarCore" Version="5.0.5.4" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
     <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.2.3" />
   </ItemGroup>

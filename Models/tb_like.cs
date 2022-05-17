@@ -4,32 +4,32 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace ProStart3.Model
+namespace ProStart3.Model.Models
 {
-    public class tb_collect
+    /// <summary>
+    /// 点赞实体类
+    /// </summary>
+    public class tb_like
     {
         /// <summary>
-        /// 收藏表的主键
+        /// 点赞id
         /// </summary>
-        public int Collect_id { get; set; }
+        [SugarColumn(IsPrimaryKey = true)]
+        public int Like_id { get; set; }
         /// <summary>
-        /// 收藏动作的发起者
+        /// 用户id
         /// </summary>
         [Required]
         public int User_id { get; set; }
         /// <summary>
-        /// 被收藏文章的主键
+        /// 文章id
         /// </summary>
         [Required]
         public int Writing_id { get; set; }
         /// <summary>
-        /// 收藏夹的主键id
+        /// 点赞时间
         /// </summary>
         [Required]
-        public int CollectFolder_id { get; set; }
-        /// <summary>
-        /// 动作的发生时间
-        /// </summary>
-        public DateTime Collect_time { get; set; }
+        public DateTime Like_time { get; set; }
     }
 }

@@ -3,10 +3,18 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
-namespace ProStart3.Model
+
+namespace ProStart3.Model.Models
 {
+    /// <summary>
+    /// 评论表实体类
+    /// </summary>
     public class tb_comment
     {
+        /// <summary>
+        /// 评论id
+        /// </summary>
+        [SugarColumn(IsPrimaryKey = true)]
         public int Comment_id { get; set; }
         /// <summary>
         /// 评论人的id
@@ -16,11 +24,16 @@ namespace ProStart3.Model
         /// <summary>
         /// 评论人的url
         /// </summary>
-        [Display(Name = "评论的URL")]
+        [Display(Name = "评论内容的URL")]
         [Required(ErrorMessage = "这是必填项")]
         public string Comment_content { get; set; }
+        /// <summary>
+        /// 文章的writingid
+        /// </summary>
+        public int Writing_id { get; set; }
+        /// <summary>
+        /// 评论时间
+        /// </summary>
         public DateTime Comment_createtime { get; set; }
-
-         
     }
 }
